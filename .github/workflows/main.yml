@@ -19,6 +19,9 @@ jobs:
         with:
           node-version: '20'
 
+      - name: Change directory to notesapp-ui
+        run: cd notesapp-ui
+
       - name: Install dependencies
         run: npm install
 
