@@ -9,6 +9,9 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: ./notesapp-ui
 
     steps:
       - name: Checkout code
@@ -18,9 +21,6 @@ jobs:
         uses: actions/setup-node@v2
         with:
           node-version: '20'
-
-      - name: Change directory to notesapp-ui
-        run: cd notesapp-ui
 
       - name: Install dependencies
         run: npm install
