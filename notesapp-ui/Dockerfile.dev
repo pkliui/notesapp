@@ -1,4 +1,4 @@
-# this is a dev Dockerile for notesapp-ui
+# this is a Dockerile for notesapp-ui
 FROM node:20
 
 WORKDIR /app
